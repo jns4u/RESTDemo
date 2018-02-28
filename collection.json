@@ -1,0 +1,128 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SmatSocial",
+		"_postman_id": "be20d16a-9142-0d21-dd3b-b4a29dd043dd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Data",
+			"request": {
+				"url": "http://localhost/smatsocialapi/getdata/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://petstore-demo-endpoint.execute-api.com/petstore/pets",
+			"request": {
+				"url": "http://petstore-demo-endpoint.execute-api.com/petstore/pets/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Load Data into DB",
+			"request": {
+				"url": "http://localhost/smatsocialapi/fetchdata/",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search Posts",
+			"request": {
+				"url": {
+					"raw": "http://localhost/smatsocialapi/searchposts?search_str=Zuckerberg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"smatsocialapi",
+						"searchposts"
+					],
+					"query": [
+						{
+							"key": "search_str",
+							"value": "Zuckerberg",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update posts",
+			"request": {
+				"url": "http://localhost/smatsocialapi/updatepost",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "post_id",
+							"value": "208708862489818_1930779423616078",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "test",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is test description",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"url": "http://localhost/smatsocialapi/deletepost/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "post_id",
+							"value": "208708862489818_1930779423616078",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
