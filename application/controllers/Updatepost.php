@@ -9,9 +9,9 @@ class Updatepost extends CI_Controller {
 
 	public function index()	
 	{	$this->load->model('FetchdataMdl');		
-		$post_id = isset($_GET['post_id']) ? $_GET['post_id'] : 0;
-		$title = isset($_GET['title']) ? $_GET['title'] : NULL;
-		$description = isset($_GET['description']) ? $_GET['description'] : NULL;		
+		$post_id = isset($_POST['post_id']) ? $_POST['post_id'] : 0;
+		$title = isset($_POST['title']) ? $_POST['title'] : NULL;
+		$description = isset($_POST['description']) ? $_POST['description'] : NULL;		
 		$return = $this->FetchdataMdl->update_data($post_id,$title,$description);
 
 		if ($return == true) {

@@ -9,7 +9,7 @@ class Searchposts extends CI_Controller {
 
 	public function index()	
 	{	$this->load->model('FetchdataMdl');		
-		$search_str = isset($_GET['search_str']) ? $_GET['search_str'] : NULL;
+		$search_str = isset($_POST['search_str']) ? $_POST['search_str'] : NULL;
 		$data = $this->FetchdataMdl->search_post($search_str);
 		
 		$this->output

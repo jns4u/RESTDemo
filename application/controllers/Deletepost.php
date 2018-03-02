@@ -7,7 +7,7 @@ class Deletepost extends CI_Controller {
 	{	$this->load->model('FetchdataMdl');
 		
 		$post_id = $this->uri->segment(2);
-		$post_id = isset($post_id) ? $post_id : 0;
+		$post_id = isset($_POST['post_id']) ? $_POST['post_id'] : 0;
 		$return = $this->FetchdataMdl->delete_data($post_id);
 
 		if ($return == true) {
