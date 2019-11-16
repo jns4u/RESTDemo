@@ -1,5 +1,6 @@
 {
-	"description": "The Agora API",
+	"description": "RESTDemo",
+	"version":"1.0.0",
 	"name": "SmatSocial App",
 	"type": "project",
 	"homepage": "https://github.com/jns4u/smatsocialapi.git",
