@@ -1,12 +1,12 @@
 ###################
-SMATSOCIAL BACKEND 
+RESTDemo BackEnd 
 ###################
 
 ALL API end point screenshots are enclosed in root document for review
 *******************
 Release Information
 *******************
-v0.0.1( Basic features as asked )
+v1.0.0( Basic features as asked )
 
 
 *******************
@@ -77,4 +77,4 @@ Now you are ready digg this application!
 Acknowledgement
 ***************
 
-I would like to convey my christmas greetings The CodeIgniter and SmatSocial team also there is special place for EllisLab, all the contributors to the CodeIgniter project and you, the CodeIgniter user.
+I would like to convey my christmas greetings to team CodeIgniter and SmatSuite. Special thanks to EllisLab, all the contributors to the CodeIgniter project and you, the CodeIgniter user.
